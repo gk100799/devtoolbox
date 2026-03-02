@@ -11,25 +11,25 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10">
+    <div className="max-w-5xl mx-auto px-4 py-12">
       {/* Hero */}
-      <div className="text-center mb-10">
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-3">
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold mb-3">
           🛠️ Free Online Dev &amp; Utility Tools
         </h1>
-        <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
           Fast, free, and privacy-friendly. All tools run entirely in your
           browser — nothing is sent to any server.
         </p>
       </div>
 
       {/* Top Ad */}
-      <AdBanner slot="1234567890" format="horizontal" className="mb-10" />
+      <AdBanner slot="1234567890" format="horizontal" className="mb-12" />
 
       {/* Tools by category */}
       {categories.map((category) => (
         <section key={category} className="mb-12">
-          <h2 className="text-xl font-bold text-gray-700 mb-4 border-b border-gray-200 pb-2">
+          <h2 className="text-xl font-semibold mb-4 border-b border-gray-200 dark:border-gray-800 pb-2">
             {category}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -39,13 +39,13 @@ export default function Home() {
                 <Link
                   key={tool.slug}
                   href={`/tools/${tool.slug}`}
-                  className="group bg-white border border-gray-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition-all duration-150"
+                  className="group bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-lg p-5 hover:border-gray-400 dark:hover:border-gray-600 hover:shadow-md transition-all duration-150"
                 >
                   <div className="text-3xl mb-2">{tool.icon}</div>
-                  <h3 className="font-semibold text-gray-900 group-hover:text-blue-600">
+                  <h3 className="font-semibold group-hover:opacity-70 transition">
                     {tool.name}
                   </h3>
-                  <p className="text-sm text-gray-500 mt-1">
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                     {tool.description}
                   </p>
                 </Link>
