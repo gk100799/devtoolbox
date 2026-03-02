@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛠️ DevToolbox — Free Online Utility Tools
 
-## Getting Started
+A privacy-first, ad-supported collection of 10 free online tools. All tools run entirely in your browser — no data sent to servers.
 
-First, run the development server:
+## 🚀 Deploy to GitHub Pages (3 Steps)
 
+### Step 1: Create GitHub Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git push -u origin main
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 2: Enable GitHub Pages
+1. Go to **Settings** → **Pages**
+2. Select **Source**: "GitHub Actions"
+3. Save
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Step 3: Site is LIVE!
+GitHub Actions auto-deploys within 1-2 minutes when you push to `main`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Your site will be live at:**
+- User/Org: `https://YOUR_USERNAME.github.io`
+- Project: `https://YOUR_USERNAME.github.io/YOUR_REPO`
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📋 10 Tools Included
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Text:** Word Counter, Case Converter | **Dev:** JSON Formatter, Base64, Diff Checker, Markdown Preview, URL Encoder | **Security:** Password Generator | **Calc:** Age Calculator | **Design:** HEX↔RGB Converter
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All run 100% in your browser. No servers. No tracking. Pure privacy.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💰 AdSense Ready
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Publisher ID already configured. Once domain is verified in AdSense (24-48 hrs), ads start earning.
+
+**Potential:** $100-500/month with 20-30 tools (fully passive, no marketing needed).
+
+---
+
+## 🛠️ Local Dev
+
+```bash
+npm install
+npm run dev              # http://localhost:3000
+npm run build            # exports to ./out/
+npx serve out            # preview production build
+```
+
+---
+
+## 🔧 Add More Tools (Easy!)
+
+1. Add to `src/lib/tools.ts`
+2. Create `src/tools/YourTool.tsx`
+3. Add mapping in `src/app/tools/[slug]/page.tsx`
+4. Push → auto-deploys!
+
+---
+
+## 🌍 SEO Built-In
+
+- Unique metadata per page
+- Sitemap.xml & robots.txt auto-generated
+- Privacy-focused = better SEO rankings
+
+---
+
+**Start earning passive income today!** 🚀
