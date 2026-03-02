@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "base64 encoder",
     "password generator",
   ],
-  metadataBase: new URL("https://gk100799.github.io/devtoolbox/"),
+  metadataBase: new URL("https://gk100799.github.io/"),
   openGraph: {
     type: "website",
     siteName: "DevToolbox",
