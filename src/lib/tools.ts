@@ -109,6 +109,96 @@ export const tools: Tool[] = [
     keywords: ["url encoder", "url decoder", "encode url online", "percent encode url"],
     icon: "🌐",
   },
+  {
+    slug: "slug-generator",
+    name: "URL Slug Generator",
+    description: "Convert text to URL-friendly slugs instantly.",
+    longDescription:
+      "Free online URL slug generator. Convert any text into clean, URL-friendly slugs perfect for blogs, URLs, and file names. Automatically handles spacing, special characters, and formatting.",
+    category: "Developer Tools",
+    keywords: ["slug generator", "url slug", "create slug", "slug creator online"],
+    icon: "🔗",
+  },
+  {
+    slug: "qr-code-generator",
+    name: "QR Code Generator",
+    description: "Generate QR codes from text or URLs instantly.",
+    longDescription:
+      "Free online QR code generator. Create QR codes from any text, URL, or data. Download as PNG image. Perfect for marketing, contact info, URLs, and sharing links digitally.",
+    category: "Developer Tools",
+    keywords: ["qr code generator", "generate qr code online", "qr code maker", "free qr code"],
+    icon: "📱",
+  },
+  {
+    slug: "reverse-text",
+    name: "Reverse Text Generator",
+    description: "Reverse text or strings instantly.",
+    longDescription:
+      "Free online text reversal tool. Reverse any text, word, or string backwards. Perfect for checking palindromes, creative writing, and fun text manipulation.",
+    category: "Text Tools",
+    keywords: ["reverse text", "reverse string", "backwards text", "text reversal tool"],
+    icon: "🔄",
+  },
+  {
+    slug: "email-validator",
+    name: "Email Address Validator",
+    description: "Validate email addresses instantly.",
+    longDescription:
+      "Free online email validator. Check if an email address is valid format. Validates domain structure and identifies potential issues with email addresses.",
+    category: "Utilities",
+    keywords: ["email validator", "check email valid", "email address validator", "validate email online"],
+    icon: "✉️",
+  },
+  {
+    slug: "remove-duplicates",
+    name: "Remove Duplicate Lines / Words",
+    description: "Remove duplicate lines or words from text.",
+    longDescription:
+      "Free online duplicate remover. Remove duplicate lines or words from any text. Preserves order and quickly cleans up repeating content from lists, logs, or documents.",
+    category: "Text Tools",
+    keywords: ["remove duplicates", "duplicate remover", "remove duplicate lines", "delete duplicates online"],
+    icon: "🗑️",
+  },
+  {
+    slug: "uuid-generator",
+    name: "UUID Generator",
+    description: "Generate RFC4122 UUIDs instantly.",
+    longDescription:
+      "Free online UUID generator. Generate unique identifiers (RFC4122 v4) for databases, applications, and unique identification. Generate single or multiple UUIDs at once.",
+    category: "Developer Tools",
+    keywords: ["uuid generator", "generate uuid", "uuid v4 generator", "unique id generator online"],
+    icon: "🆔",
+  },
+  {
+    slug: "unit-converter",
+    name: "Unit Converter",
+    description: "Convert between different units of measurement.",
+    longDescription:
+      "Free online unit converter. Convert between length (meter, feet, miles), weight (kg, pounds, ounces), and temperature (celsius, fahrenheit, kelvin) units instantly.",
+    category: "Calculators",
+    keywords: ["unit converter", "convert units online", "length converter", "weight converter", "temperature converter"],
+    icon: "⚖️",
+  },
+  {
+    slug: "text-hash",
+    name: "Text Hash Generator",
+    description: "Generate SHA-256 hashes of text.",
+    longDescription:
+      "Free online text hashing tool. Generate SHA-256 cryptographic hashes of any text. Perfect for password hashing, data integrity checking, and security applications.",
+    category: "Developer Tools",
+    keywords: ["hash generator", "sha256 hash", "text hash", "generate hash online"],
+    icon: "🔐",
+  },
+  {
+    slug: "morse-code",
+    name: "Morse Code Converter",
+    description: "Convert text to Morse code and vice versa.",
+    longDescription:
+      "Free online Morse code converter. Translate text to Morse code (dots and dashes) or decode Morse code to text. Perfect for learning, communication, and signal practice.",
+    category: "Developer Tools",
+    keywords: ["morse code converter", "text to morse code", "morse code translator", "morse code online"],
+    icon: "📡",
+  },
 ];
 
 export const categories = [...new Set(tools.map((t) => t.category))];

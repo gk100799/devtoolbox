@@ -10,6 +10,15 @@ import HexRgbConverter from "@/tools/HexRgbConverter";
 import DiffChecker from "@/tools/DiffChecker";
 import MarkdownPreview from "@/tools/MarkdownPreview";
 import UrlEncoder from "@/tools/UrlEncoder";
+import SlugGenerator from "@/tools/SlugGenerator";
+import QRCodeGenerator from "@/tools/QRCodeGenerator";
+import ReverseText from "@/tools/ReverseText";
+import EmailValidator from "@/tools/EmailValidator";
+import RemoveDuplicates from "@/tools/RemoveDuplicates";
+import UUIDGenerator from "@/tools/UUIDGenerator";
+import UnitConverter from "@/tools/UnitConverter";
+import TextHashing from "@/tools/TextHashing";
+import MorseCodeConverter from "@/tools/MorseCodeConverter";
 import type { Metadata } from "next";
 
 interface PageProps {
@@ -27,6 +36,15 @@ const toolComponents: Record<string, React.ComponentType> = {
   "diff-checker": DiffChecker,
   "markdown-preview": MarkdownPreview,
   "url-encoder": UrlEncoder,
+  "slug-generator": SlugGenerator,
+  "qr-code-generator": QRCodeGenerator,
+  "reverse-text": ReverseText,
+  "email-validator": EmailValidator,
+  "remove-duplicates": RemoveDuplicates,
+  "uuid-generator": UUIDGenerator,
+  "unit-converter": UnitConverter,
+  "text-hash": TextHashing,
+  "morse-code": MorseCodeConverter,
 };
 
 export async function generateMetadata(
